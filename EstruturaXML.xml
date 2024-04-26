@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-16"?>
+<XML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Usuarios>
+    <Usuario>
+      <Id>1</Id>
+      <Nome>Caique</Nome>
+      <Login>caique.burssed</Login>
+      <Senha>senha123</Senha>
+      <Bloqueado>false</Bloqueado>
+      <DataAcesso>2024-04-26T18:10:58.4367624-03:00</DataAcesso>
+      <Entidade>
+        <Id>1</Id>
+        <Nome>Deliver IT</Nome>
+        <Responsavel>Narelize</Responsavel>
+        <TerminalPrefixo>123</TerminalPrefixo>
+      </Entidade>
+      <Perfis>
+        <Perfil>
+          <Id>1</Id>
+          <Nome>Desenvolvedor</Nome>
+          <Sistema>
+            <Id>1</Id>
+            <Nome>Linux</Nome>
+            <Link>http://www.linux.com.br</Link>
+          </Sistema>
+        </Perfil>
+        <Perfil>
+          <Id>2</Id>
+          <Nome>Vendedor</Nome>
+          <Sistema>
+            <Id>2</Id>
+            <Nome>Windows</Nome>
+            <Link>http://www.windows.com.br</Link>
+          </Sistema>
+        </Perfil>
+      </Perfis>
+    </Usuario>
+    <Usuario>
+      <Id>2</Id>
+      <Nome>Pedro</Nome>
+      <Login>pedro.oliveira</Login>
+      <Senha>senha123</Senha>
+      <Bloqueado>false</Bloqueado>
+      <DataAcesso>2024-04-26T18:10:58.449598-03:00</DataAcesso>
+      <Entidade>
+        <Id>1</Id>
+        <Nome>Deliver IT</Nome>
+        <Responsavel>Narelize</Responsavel>
+        <TerminalPrefixo>123</TerminalPrefixo>
+      </Entidade>
+      <Perfis>
+        <Perfil>
+          <Id>2</Id>
+          <Nome>Vendedor</Nome>
+          <Sistema>
+            <Id>2</Id>
+            <Nome>Windows</Nome>
+            <Link>http://www.windows.com.br</Link>
+          </Sistema>
+        </Perfil>
+      </Perfis>
+    </Usuario>
+  </Usuarios>
+</XML>
