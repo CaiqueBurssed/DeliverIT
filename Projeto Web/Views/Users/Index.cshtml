@@ -1,0 +1,68 @@
+﻿@using DeliverIT.Models
+@model List<Usuario>
+@{
+    ViewData["Title"] = "Usuarios";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Usuários</h1>
+</div>
+
+@if (Model != null && Model.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Login</th>
+                <th>Data Acesso</th>
+                <th>Bloqueado</th>
+                <th>Entidade</th>
+                <th>Responsável</th>
+                <th>Terminal</th>
+                <th>Perfil</th>
+                <th>Sistema</th>
+                <th>Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.Nome</td>
+                    <td>@user.Login</td>
+                    <td>@user.DataAcesso.ToString("yyyy/MM/dd hh:mm:ss")</td>
+                    <td>@(user.Bloqueado ? "Sim" : "Não")</td>
+                    <td>@user.Entidade.Nome</td>
+                    <td>@user.Entidade.Responsavel</td>
+                    <td>@user.Entidade.TerminalPrefixo</td>
+                    <td>
+                        @foreach (var perfil in user.Perfis)
+                        {
+                            @perfil.Nome
+                            <br />
+                        }
+                    </td>
+                    <td>
+                        @foreach (var perfil in user.Perfis)
+                        {
+                            @perfil.Sistema.Nome
+                            <br />
+                        }
+                    </td>
+                    <td>
+                        @foreach (var perfil in user.Perfis)
+                        {
+                            @perfil.Sistema.Link
+                            <br />
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Nenhum usuário encontrado.</p>
+}
