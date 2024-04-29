@@ -7,8 +7,5 @@
 
 - [SSMS]([[https://tailwindcss.com/docs/installation](https://www.docker.com)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)) - Banco de Dados Relacional para criação e teste do Script Select
 
-### 🖥️ Funcionamento do Front End
-
- 
 ### 🌈⃤  Requisitos para funcionamento
  - Visual Studio
